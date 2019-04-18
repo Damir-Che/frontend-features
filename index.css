@@ -95,17 +95,23 @@ body{
 
 /*Кнопка закрытия*/
 .content{
-	left: 500px;
-	top: 600px;
+	left: 600px;
+	/*bottom: -500px;*/
 	width: 300px;
+	bottom:400px;
 	height: 50px;
 	border: 2px solid blue;
 	text-align: center;
 	position: relative;
-	/*top: -500px;*/
+	top: 1000px;
 	background: #A4A4A4;
-	transition: all 300ms;
-	display: none;
+	transition: all 1000ms;
+	/*display: none;*/
+}
+.cont-active{
+	 opacity: 0;
+  	visibility: hidden;
+  	transition: opacity 0.3s, visibility 0s linear 0.3s;
 }
 .x{
 	float: right;

@@ -3,15 +3,16 @@
 $(document).ready(function(){
 // меню
 	$('.but').on('click',function(){
-		$('#sidebar').toggleClass('active')
+		$('#sidebar').toggleClass('active');
 	})
 
 
 	$('.Xbut').click(function(){
-		$('.content').fadeIn().addClass('div-active');
+		// $('.content').fadeIn().addClass('div-active');
+		$('.content').css('top','200px')
 // удаление через время
-		setTimeout(function(){
- 		$('.content').css('left','-500px');
+ 	setTimeout(function(){
+ 		$('.content').toggleClass('cont-active')
 
  	},3000);
 
@@ -19,7 +20,7 @@ $(document).ready(function(){
 
 		// кнопка закрытия
 	$('.x').on('click',function(){
-		$('.content').css('left','-500px');
+		$('.content').toggleClass('cont-active');
 	})
 
 
