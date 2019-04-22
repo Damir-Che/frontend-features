@@ -8,13 +8,13 @@ $(document).ready(function(){
 
 
 	$('.Xbut').click(function(){
-		// $('.content').fadeIn().addClass('div-active');
-		$('.content').css('top','200px')
+		// $('.content').css('top','550px')
+		$('.content').css('bottom','0px')
 // удаление через время
  	setTimeout(function(){
- 		$('.content').toggleClass('cont-active')
+ 		$('.content').addClass('cont-active');
 
- 	},3000);
+ 	},5000);
 
 	})
 
