@@ -139,6 +139,17 @@ img{
 .div-active{
 	display: block;
 }
+/*картинки*/
+.container{
+	position: absolute;
+	top: 200px;
+	left: 450px;
+}
+
+.container img{
+	width: 270px;
+	height: 200px;
+}
 
 @media screen and (max-width: 500px){
 	#sidebar{
@@ -151,10 +162,18 @@ img{
 
 	.notification-container{
 		left: 70px;
-
-
 	}
 
+	.container{
+	/*	position: inherit  ;*/
+		top: 400px;
+		left: 30px;
+	}
+	
+	.container img{
+		width: 130px;
+		height: 120px;
+	}
 
 
 }
