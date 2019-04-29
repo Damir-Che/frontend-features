@@ -21,19 +21,21 @@ $(document).ready(function(){
 		// кнопка закрытия
 	$('.x').on('click',function(){
 		$('.content').toggleClass('cont-active');
+	});
+// товары
+
+	$('.basket').on('click', function(){
+		
+		$('.null').html(+$('.null').html()+1 );
+		$('.null').css('display','inline');
+		$('.null').css('color','#CED8F6');
+
 	})
 
-	// картинки
-	// $("a.gallery").fancybox();
+	// сортировка
+	$('.expensive').on('click', function(){
+		alert('asd');
+	})
 
-	// 	$("a.gallery").fancybox({
-	// 		"padding" : 20, // отступ контента от краев окна
-	// 		"zoomSpeedIn" : 1000,	// скорость анимации в мс при увеличении фото (по умолчанию 0)
-	// 		"zoomSpeedOut" : 1000,	// скорость анимации в мс при уменьшении фото (по умолчанию 0)
-	// 		"overlayOpacity" : 0.5,	 // Прозрачность затенения 	(0.3 по умолчанию)
-	// 		"centerOnScroll" : false // Если TRUE окно центрируется на экране, когда 
-	// 	})
-
-
-})
+});
 
