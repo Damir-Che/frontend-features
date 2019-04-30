@@ -1,6 +1,7 @@
 
 
 $(document).ready(function(){
+
 // меню
 	$('.but').on('click',function(){
 		$('#sidebar').toggleClass('active');
@@ -32,10 +33,46 @@ $(document).ready(function(){
 
 	})
 
-	// сортировка
-	$('.expensive').on('click', function(){
-		alert('asd');
+// Сортировка
+	$('.cheaper').on('click',function(){
+
+
+	    let elements = $('.product_1');
+	    let target = $('.container');
+	     
+	    elements.sort(function (a, b) {
+	        let an = parseInt($(a).attr('summ')),
+	            bn = parseInt($(b).attr('summ'));
+	        if(an > bn) return 1;
+	        if(bn < an) return 0;
+	        return 0;
+
+	   });
+	     
+    elements.detach().appendTo(target);
+
 	})
+
+	$('.expensive').on('click',function(){
+
+
+    let elements = $('.product_1');
+    let target = $('.container');
+     
+    elements.sort(function (a, b) {
+        let an = parseInt($(a).attr('summ')),
+            bn = parseInt($(b).attr('summ'));
+        if(an < bn) return 1;
+        if(bn > an) return 0;
+        return 0;
+    });
+     
+    elements.detach().appendTo(target);
+
+	})
+	$('#preloaders').find('img').fadeOut().end().delay(400).fadeOut('slow');
+	
+
 
 });
 

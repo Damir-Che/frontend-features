@@ -6,7 +6,35 @@
 }
 body{
 	background: #E6E6E6;
+
 }
+/*загрузка*/
+#preloaders {
+position: fixed; /*фиксированное положение блока*/
+left: 0; /*положение элемента слева*/
+top: 0; /*положение элемента сверху*/
+right: 0; /*положение элемента справа*/
+bottom: 0; /*положение элемента снизу*/
+background: #fff; /*цвет заднего фона блока*/
+z-index: 1001; /*располагаем его над всеми элементами на странице*/
+}
+#preloaders img {
+font-size: 70px; /*размер иконки*/
+position: absolute; /*положение абсолютное, позиционируется относительно его ближайшего предка*/
+left: 50%; /*слева 50% от ширины родительского блока*/
+top: 50%; /*сверху 50% от высоты родительского блока*/
+height: 40px;
+width: 200px;
+margin: -35px 0 0 -35px; /*смещение иконки, чтобы она располагалась по центру*/
+}
+
+.xxx{
+	/*border: 1px solid red;*/
+	background-color: #D8D8D8;
+	width: 1023px;
+	border-radius: 10px;
+}
+
 /*уведомление*/
 .content-active{
 	top: 0;
@@ -26,6 +54,16 @@ body{
 	position: fixed;
    	top: 0;
 
+}
+
+.basket{
+	width: 173px;
+	height: 33px;
+	border-radius: 30px;
+}
+.basket:hover{
+	cursor: pointer;
+	font-size: 15px
 }
 /*левое меню*/
 #sidebar{
@@ -191,29 +229,43 @@ img{
 
 /*товары*/
 .product_1{
-	border: 2px solid black;
+	/*border: 2px solid black;*/
 	width: 250px;
 	padding: 5px;
 	float: left;
 	margin-bottom: 10px;
+	border-radius: 10px;
+	background-color: #fff;
 }
-
-.pop{
+#span{
+	font-weight:bold;
+	font-size: 20px;
+}
+.pop span{ 
+	margin-left: 80px;
+	color: #585858;
 
 }
 /*название товара*/
 .product_1 p{
 	text-align: center;
 	padding: 5px;
+
+		 background: linear-gradient(45deg,#12BCB0 20%, #FABE0E 70%);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
+
+/*#052b70 10%,#0f4865 10%,#185b64 10%,#196257 10%, #1f6956 10%,#1f7351 10%,#247b4e*/
 /*описание товара*/
 .description{
-	border: 1px solid black;
+	/*border: 1px solid black;*/
+	font-size: 13px;
 	padding: 5px;
 	width: 219px;
-	height: 100px;
+	height: 72px;
 	overflow: hidden;
-
+	text-align: center;
 }
 
 .cont{
