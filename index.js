@@ -23,7 +23,7 @@ $(document).ready(function(){
 	$('.x').on('click',function(){
 		$('.content').toggleClass('cont-active');
 	});
-// товары
+// добовление товаров
 
 	$('.basket').on('click', function(){
 		
@@ -72,7 +72,17 @@ $(document).ready(function(){
 	})
 	$('#preloaders').find('img').fadeOut().end().delay(400).fadeOut('slow');
 	
+	// поиск
 
+	            $("#search").keyup(function(){
+                _this = this;
+                $.each($(".container .product_1"), function() {
+                    if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+                       $(this).hide();
+                    else
+                       $(this).show();                
+                });
+            });
 
 });
 

@@ -63,7 +63,6 @@ margin: -35px 0 0 -35px; /*смещение иконки, чтобы она ра
 }
 .basket:hover{
 	cursor: pointer;
-	font-size: 15px
 }
 /*левое меню*/
 #sidebar{
@@ -247,11 +246,11 @@ img{
 
 }
 /*название товара*/
-.product_1 p{
+#span{
 	text-align: center;
 	padding: 5px;
 
-		 background: linear-gradient(45deg,#12BCB0 20%, #FABE0E 70%);
+		 background: linear-gradient(45deg, #ffc107 40%, #FF8000 33%, #DF01D7);
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 }
