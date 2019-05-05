@@ -71,7 +71,7 @@ margin: -35px 0 0 -35px; /*смещение иконки, чтобы она ра
 	top: 50px;
 	height: 100%;
 	background-color: #57626f;
-	border-right: 4px solid #E0E5EA;
+	border-right: 1px solid #E0E5EA;
 	transition: all 300ms;
 }
 /*левое меню*/
@@ -272,6 +272,99 @@ img{
 	height: 100px;
 	background-color: red
 }
+/*footer*/
+.foot{
+	height: 200px;
+	width: 100%;
+	background-color: black;
+	margin-top: 900px;
+	/*margin-left: 100px;*/
+	/*position: absolute;*/
+}
+
+.foot_ul{
+	margin-left: 500px;
+}
+.foot_ul a{
+	color: #5858FA
+}
+.foot_ul li{
+	list-style: none;
+	float: left;
+	padding: 30px;
+}
+
+.foot_ul a{
+	text-decoration: none;
+}
+
+.foot p{
+	margin-top: 83px;
+	padding-left: 257px;
+}
+
+.icon{
+	padding-top: 17px;
+}
+
+.icon a{
+	padding-left: 40px;
+	font-size: 40px;
+	color: #A4A4A4
+}
+
+.fa-vk:hover{
+	color: #FA5858;
+	transition: all 200ms;
+}
+.fa-twitter:hover{
+	color: #DBA901;
+	transition: all 200ms;
+}
+.fa-facebook-official:hover{
+	color: #31B404;
+	transition: all 200ms;
+}
+.fa-github:hover{
+	color: #8A0886;
+	transition: all 200ms;
+}
+
+/*авторизация*/
+.authorization{
+	margin-left: 1433px;
+	margin-top: -46px;
+}
+
+.authorization_1{
+	width: 120px;
+	margin-left: 10px;
+}
+.authorization_open{
+	width: 100px;
+}
+.form-check{
+	margin-left: 13px;
+}
+.modal{
+	width: 500px;
+	margin-left: 700px;
+	margin-top: 100px;
+}
+.modal form{
+	padding-top: 10px;
+}
+
+.modal a{
+	font-size: 35px;
+	padding-left: 45px;
+	margin-left: 12px;
+}
+/*регистрация*/
+.reg{
+	width: 500px;
+
+}
 
 /*/////////////////////////////////////////////////*/
 @media screen and (max-width: 950px){
@@ -332,6 +425,10 @@ img{
 		width: 192px;
 		height: 152px;
 		margin-left: 10px;
+	}
+
+	.foot{
+		/*position: inherit*/
 	}
 
 

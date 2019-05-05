@@ -14,33 +14,137 @@
 
     <title>Муню для сайта!</title>
 
+
+
+
+<!-- Вход -->
+
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="margin-left:450px ">&times;</span>
+        </button>
+
+          <form>
+  <div class="form-group pl-2 pr-2">
+    <label for="exampleInputEmail1">Введите Email</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+
+  </div>
+  <div class="form-group pl-2 pr-2">
+    <label for="exampleInputPassword1">Пароль</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+  </div>
+
+    <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+  </div>
+
+  <button type="submit" class="btn btn-primary pt-1" style="width: 100%">Вход</button>
+</form>
+  <p class="pl-3">Войти с помощью <br>
+      <a href=""><i class="fa fa-vk" aria-hidden="true"></i></a> 
+      <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a> 
+      <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a> 
+      <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+  </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Регистрация -->  
+<div class="modal fade reg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true" style="margin-left:450px ">&times;</span>
+        </button>
+      <div class="modal-body">
+        <form>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Имя">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Фамилия">
+    </div>
+  </div>
+   <div class="row pt-2">
+    <div class="col">
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+    </div>
+    <div class="col">
+      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+      <small id="emailHelp" class="form-text text-muted">Не менее 6 символов</small>
+    </div>
+  </div>
+
+</form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+        <button type="button" class="btn btn-primary">Регистрация</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
   </head>
   <body>
     <div class="butt">
       <i class=" but fa fa-bars pt-2  " aria-hidden="true"></i>
-      <a href="#" class="pt-1 "><i class="fa fa-shopping-cart" aria-hidden="true"><span class ='null pl-4'>0</span></i></a>
+      <div href="#" class="pt-1 ">
+        <i class="fa fa-shopping-cart" aria-hidden="true"><span class ='null pl-4'>0</span></i>
+      </div>
+            <div class="authorization">
+        <a href="#" class="btn btn-secondary authorization_1"  data-toggle="modal" data-target="#myModal">Регистрация</a>
+        <a href="#" class="btn btn-secondary authorization_open" data-toggle="modal" data-target=".bd-example-modal-lg">Вход</a>
+      </div>
     </div>
 
     <div id="sidebar">
       <ul>
         <li>Меню</li>
-        <li><a href="#">Главная</a></li>
-        <li><a href="#">Контакты</a></li>
-        <li><a href="#">Про нас</a></li>
+        <li><a href="#" class="the_main" >Главная</a></li>
+        <li><a href="#1" class="silka">Контакты</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#exampleModal">Про нас</a></li>
         <button class="Xbut btn btn-outline-info ml-4">Tets notify</button>
       </ul>
     </div>
 
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae incidunt eveniet odio est, voluptas perferendis sint doloremque neque nulla ab modi, officiis eos. Repudiandae fuga assumenda ab accusamus quia quidem aut iste, ipsum enim reiciendis, corrupti nesciunt voluptatibus. Eaque quaerat, exercitationem aut porro adipisci illum expedita obcaecati dolorum quidem repudiandae consequuntur hic harum fuga? Consectetur eligendi nesciunt nam nulla voluptatibus inventore quisquam sint enim, esse suscipit maxime cumque at necessitatibus totam alias perferendis sed, minima harum architecto consequatur repellat. Fuga consectetur corporis rem sapiente consequuntur, vel laborum dolor expedita consequatur illum neque, in, animi quasi tempore voluptatum explicabo. Sed.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-
+<!-- уведомление -->
     <div class="notification-container">
-
       <div class="content pt-4 pl-4" >
         Tets notify!<img src="img/591c7762d897897e8465186b_close.svg" class="x pl-5">
       </div>
-
     </div>
+
 
 
 
@@ -54,7 +158,7 @@
       <div class="mb-2 p-1 xxx">
         <button class="btn btn-warning expensive ml-2">Дороже</button>
         <button class="btn btn-warning cheaper ml-2">Дешевле</button>
-        <input type="text" class="form-control pull-right" style="width:20%" id="search" placeholder="Поиск по сайту...">
+        <input type="text" class="form-control pull-right" style="width:20%" id="search" placeholder="Поиск по товарам...">
       </div>
 
     <div class="product_1  pl-3 mr-2" summ="500">
@@ -72,6 +176,7 @@
        <p  class="btn btn-outline-primary basket ml-4 mt-3">Добавить</p>
        </div>
       </div>
+
 
             <div class="product_1  pl-3 mr-2" summ="501">
         <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2">
@@ -104,8 +209,6 @@
        <p  class="btn btn-outline-primary basket ml-4 mt-3">Добавить</p>
        </div>
       </div>
-
-
 
              <div class="product_1  pl-3 mr-2" summ="503">
         <a href="img/e-guitar-1736291_640.jpg" data-fancybox="gallery" data-caption="Caption #4">
@@ -187,9 +290,28 @@
        </div>
       </div>
 
-
-
     </div>
+
+
+    <footer class="foot">
+      <ul class="foot_ul">
+        <li><a href="#">О проекте</a></li>
+        <li><a href="#">Вакансии</a></li>
+        <li><a href="#">Реклама на сайте</a></li>
+        <li><a href="#">Конфеденциальность </a></li>
+      </ul>
+
+      <ul class="icon">
+        <a href="#"><i id="1" class="fa fa-vk" aria-hidden="true"></i></a> 
+        <a href="#"><i id="1" class="fa fa-twitter" aria-hidden="true"></i></a> 
+        <a href="#"><i id="1" class="fa fa-facebook-official" aria-hidden="true"></i></a> 
+        <a href="#"><i id="1" class="fa fa-github" aria-hidden="true"></i></a>
+      </ul>
+      
+
+      <p style="color: #fff">© 2002–2019 Иванов Иван, по всем вопросам пишите по адресу vlad@htmlbook.ru</p>
+      
+    </footer>
            
         
 

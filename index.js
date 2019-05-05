@@ -84,5 +84,25 @@ $(document).ready(function(){
                 });
             });
 
+
+
+	   // Якорьный ссылки----------------------------------------------
+
+	$('.silka').on('click',function(){
+
+		let nameClick = $(this).attr('href');
+		// вычесляем какой отступ имеет сверху 
+		let top = $(nameClick).offset().top-150;
+
+		$('body, html').animate({scrollTop: top},700);
+		// что бы ссылки не перелистывались вверх
+		return false;
+	})  
+
+
+	// 
+
+	// $('.sidebar')
+
 });
 
