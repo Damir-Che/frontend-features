@@ -7,19 +7,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" media="screen" />
 
-<link rel="stylesheet" type="text/css" href="index.css">
-<meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>CSSgrid</title>
 
-    <title>Муню для сайта!</title>
+    <style>
 
+    </style>
 
+  <!----------Модальные окна ----------------------------------------------------------- -->
 
-
-<!-- Вход -->
-
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<!-- Кнопка ВХОД -->
+  <div class="modal btnSign fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -55,8 +55,9 @@
 </div>
 
 
-<!-- Регистрация -->  
-<div class="modal fade reg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!--Кнопка  РЕГИСТРАЦИЯ  -->
+
+  <div class="modal fade btnReg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -66,10 +67,10 @@
         <form>
   <div class="row">
     <div class="col">
-      <input type="text" class="form-control" placeholder="Имя">
+      <input type="text" class="form-control form_width" placeholder="Имя">
     </div>
     <div class="col">
-      <input type="text" class="form-control" placeholder="Фамилия">
+      <input type="text" class="form-control form_width" placeholder="Фамилия">
     </div>
   </div>
    <div class="row pt-2">
@@ -92,34 +93,8 @@
   </div>
 </div>
 
-
-
-  </head>
-  <body>
-    <div class="butt">
-      <i class=" but fa fa-bars pt-2  " aria-hidden="true"></i>
-      <div href="#" class="pt-1 ">
-        <i class="fa fa-shopping-cart" aria-hidden="true"><span class ='null pl-4'>0</span></i>
-      </div>
-            <div class="authorization">
-        <a href="#" class="btn btn-secondary authorization_1"  data-toggle="modal" data-target="#myModal">Регистрация</a>
-        <a href="#" class="btn btn-secondary authorization_open" data-toggle="modal" data-target=".bd-example-modal-lg">Вход</a>
-      </div>
-    </div>
-
-    <div id="sidebar">
-      <ul>
-        <li>Меню</li>
-        <li><a href="#" class="the_main" >Главная</a></li>
-        <li><a href="#1" class="silka">Контакты</a></li>
-        <li><a href="#" data-toggle="modal" data-target="#exampleModal">Про нас</a></li>
-        <button class="Xbut btn btn-outline-info ml-4">Tets notify</button>
-      </ul>
-    </div>
-
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- Кнопка ПРО НАС -->
+  <div class="modal fade btnInfo" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -138,6 +113,7 @@
   </div>
 </div>
 
+
 <!-- уведомление -->
     <div class="notification-container">
       <div class="content pt-4 pl-4" >
@@ -146,177 +122,366 @@
     </div>
 
 
-
-
-    <div class="container">
-
-    <!-- индикатор загрузки -->
+  <!-- ----------------------------------------------------------- -->
+<!-- индикатор загрузки -->
       <div id="preloaders">
         <img src="img/30.gif">
       </div>
 
-      <div class="mb-2 p-1 xxx">
-        <button class="btn btn-warning expensive ml-2">Дороже</button>
-        <button class="btn btn-warning cheaper ml-2">Дешевле</button>
-        <input type="text" class="form-control pull-right" style="width:20%" id="search" placeholder="Поиск по товарам...">
+<!-- header -->
+      
+      <nav class="nav" style="">
+        <i class=" but fa fa-bars p-1 ml-1" aria-hidden="true" style="position: absolute; z-index: 1"></i>
+        <div class="container-fluid">
+          <div class="row">
+<!-- корзина -->
+            <div class="col-md-9  d-flex justify-content-end" style="" style="width: 300px;">
+                <i class="fa fa-shopping-cart p-1 " aria-hidden="true"><span class ='null pl-4'>0</span></i>
+            </div>
+<!-- авторизация -->
+            <div class="btn_navbar col-md-3">
+              <div class="qwe d-flex justify-content-end mt-1">
+              <button type="button" class="btn btn-secondary mr-1" data-toggle="modal" data-target=".bd-example-modal-lg" style="width: 80px; position: fixed; right: 123px">Вход</button>
+              <button type="button" class="btn btnReg btn-secondary" data-toggle="modal" data-target="#myModal" style="width: 110px; position: fixed;">Регистрация</button>
+            </div>
+
+         </div>
+         </div>
+      </nav>
+<!-- меню -->
+      <section class="section_1 mt-3 pt-4 pl-3">
+        <ul class="mt-3">
+          <li><a href="#" class="the_main" >Главная</a></li>
+          <li><a href="#1" class="silka">Контакты</a></li>
+          <li><a href="#" class="pro_nas" data-toggle="modal" data-target="#exampleModal">Про нас</a></li>
+          <button class="Xbut btn btn-outline-info mt-2">Tets notify</button>
+        </ul>        
+<!-- Адаптивные кнопки регистрации -->
+        <div class="btn_menu ">
+          <button type="button" class="btn btnSign btn-secondary " data-toggle="modal" data-target=".bd-example-modal-lg" style="width: 58px">Вход</button>
+          <button type="button" class="btn btn-secondary pr-1" data-toggle="modal" data-target="#myModal" style="width: 111px">Регистрация</button>
+        </div>
+
+      </section>
+
+
+<!------- товары -------------------------------------------------------------------------->
+      <div class="container " >
+        <div class="row d-flex justify-content-end">
+
+          <div class="product col-md-10">
+            <div class="row">
+<!-- Сортировка -->
+              <div class="col-md-6 col-sm-6 col-12" style="background-color: #444;">
+                <button class="btn btn-warning expensive m-1">Дороже</button>
+                <button class="btn btn-warning cheaper m-1">Дешевле</button>
+              </div>
+<!-- Строка поиска -->
+              <div class="col-md-6 col-sm-6 col-12 " style="background-color: #444">
+                <input type="text" class="form-control pull-right m-1" style="" id="search" placeholder="Поиск...">
+              </div>
+
+            </div>
+
+<!-- Секция с товарами -->
+            <div class="row">
+              <div class="col-md-12 mt-4 qqq">
+<!--Блок с товарами  -->
+
+<!------ 1 строка товара  ---------------------------------------------------------------------->
+                <div class="row">
+    <!-- Товар 1 -->
+                  <div class="col-md-3 product_block mb-3" summ="501">
+        <!-- img товара -->
+                    <div class="item">
+
+                      <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" class="p-2" id="img"  alt = "Картинка 1" /></a>
+          <!-- название товара -->
+                        <span class="span_Title">product_1</span>
+          <!-- описание товара -->
+                        <div>
+                          <p class="p_Description" >
+                           Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi <span style="color: #FE9A2E"><b>ОДИН</b></span>
+                        </p>
+                      </div>
+          <!-- цена товара -->
+                      <span style="" class="price_Product">501$</span>
+          <!-- кнопка добавить -->
+                      <button  class="btn btn-outline-primary basket mt-2  mb-2 ">Добавить</button>
+
+                    </div>
+
+                  </div>
+
+    <!-- Товар 2 -->
+                   <div class="col-md-3 product_block  mb-3"  summ="502">
+
+                    <div class="item">
+          <!-- img товара -->
+                      <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
+          <!-- название товара -->
+                        <span class="span_Title">product_2</span>
+          <!-- описание товара -->
+                        <div>
+                          <p class="p_Description" >
+                           Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ДВА</b></span>
+                        </p>
+                      </div>
+          <!-- цена товара -->
+                      <span style="" class="price_Product">502$</span>
+          <!-- кнопка добавить -->
+                      <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
+
+                    </div>
+
+                  </div>
+
+    <!-- Товар 3 -->
+                  <div class="col-md-3 product_block mb-3" summ="503">
+
+                    <div class="item">
+        <!-- img товара -->
+                      <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
+          <!-- название товара -->
+                        <span class="span_Title">product_3</span>
+          <!-- описание товара -->
+                        <div>
+                          <p class="p_Description" >
+                           Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ДЕСЯТЬ</b></span>
+                        </p>
+                      </div>
+          <!-- цена товара -->
+                      <span style="" class="price_Product">503$</span>
+          <!-- кнопка добавить -->
+                      <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
+
+                    </div>
+
+                  </div>
+
+    <!-- Товар 4 -->
+                  <div class="col-md-3 product_block mb-3" summ="504">
+
+                    <div class="item">
+          <!-- img товара -->
+                      <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
+          <!-- название товара -->
+                        <span class="span_Title">product_4</span>
+          <!-- описание товара -->
+                        <div>
+                          <p class="p_Description" >
+                           Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ТРИ</b></span>
+                        </p>
+                      </div>
+          <!-- цена товара -->
+                      <span style="" class="price_Product">504$</span>
+          <!-- кнопка добавить -->
+                      <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
+
+                    </div>
+                  </div>
+      <!-- /row -->
+               </div>
+
+<!------ 2 строка товара  ---------------------------------------------------------------------->
+
+                <div class="row  mt-3 mb-3">
+    <!-- Товар 1 -->
+                  <div class="col-md-3 product_block mb-3" summ="505">
+
+                    <div class="item">
+          <!-- img товара -->
+                      <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
+          <!-- название товара -->
+                        <span class="span_Title">product_5</span>
+          <!-- описание товара -->
+                        <div>
+                          <p class="p_Description" >
+                           Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ЧЕТЫРИ</b></span>
+                        </p>
+                      </div>
+          <!-- цена товара -->
+                      <span style="" class="price_Product">505$</span>
+          <!-- кнопка добавить -->
+                      <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
+
+                    </div>
+
+                  </div>
+
+    <!-- Товар 2 -->
+                   <div class="col-md-3 product_block mb-3" summ="506">
+
+                    <div class="item">
+          <!-- img товара -->
+                      <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
+          <!-- название товара -->
+                        <span class="span_Title">product_6</span>
+          <!-- описание товара -->
+                        <div>
+                          <p class="p_Description" >
+                           Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ПЯТЬ</b></span>
+                        </p>
+                      </div>
+          <!-- цена товара -->
+                      <span style="" class="price_Product">506$</span>
+          <!-- кнопка добавить -->
+                      <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
+
+                    </div>
+
+                  </div>
+
+    <!-- Товар 3 -->
+                  <div class="col-md-3 product_block mb-3" summ="507">
+
+                    <div class="item">
+          <!-- img товара -->
+                      <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
+          <!-- название товара -->
+                        <span class="span_Title">product_7</span>
+          <!-- описание товара -->
+                        <div>
+                          <p class="p_Description" >
+                           Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ШЕСТЬ</b></span>
+                        </p>
+                      </div>
+          <!-- цена товара -->
+                      <span style="" class="price_Product">507$</span>
+          <!-- кнопка добавить -->
+                      <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
+
+                    </div>
+
+                  </div>
+                  
+    <!-- Товар 4 -->
+                  <div class="col-md-3 product_block mb-3" summ="508">
+
+                    <div class="item">
+          <!-- img товара -->
+                      <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
+          <!-- название товара -->
+                        <span class="span_Title">product_8</span>
+          <!-- описание товара -->
+                        <div>
+                          <p class="p_Description" >
+                           Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>СЕМЬ</b></span>
+                        </p>
+                      </div>
+          <!-- цена товара -->
+                      <span style="" class="price_Product">508$</span>
+          <!-- кнопка добавить -->
+                      <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
+                    </div>
+                  </div>
+
+               </div>
+              </div>
+        <!-- /row -->
+            </div>
+      <!-- /product  -->
+          </div>
+
+    <!-- /row с товарами  -->
+        </div>
+<!-- /container с товарами -->      
       </div>
 
-    <div class="product_1  pl-3 mr-2" summ="500">
-        <a href="img/african-2197414_640.jpg" data-fancybox="gallery" data-caption="Caption #2">
-          <img src = "img/african-2197414_640.jpg"  alt = "" />
-       </a>
-       <p id="span">product_1</p>
+<!---------------------------------footer--------------------------------------------------->
 
-       <div class="description mb-3">
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quaerat dolore animi 
-       </div>
-      
-      <div class="pop">
-       <span style="width: 100px; font-size: 30px">500$</span>
-       <p  class="btn btn-outline-primary basket ml-4 mt-3">Добавить</p>
-       </div>
-      </div>
+      <footer class="mt-1">
+        <div class="container-fluid">
+          <div class="row">
+  <!-- левая часть болка -->
+            <div class=" col-lg-12" >
 
+              <div class="footfooter_leftBlock d-flex justify-content-center" >
+                <ul class="list-inline footer_Information m-4">
+                  <li class="list-inline-item p-2"><a href="#">О проекте</a></li>
+                  <li class="list-inline-item p-2"><a href="#">Вакансии</a></li>
+                  <li class="list-inline-item p-2"><a href="#">Реклама на сайте</a></li>
+                  <li class="list-inline-item p-2"><a href="#">Конфеденциальность </a></li>
+                </ul>
+              </div>
 
-            <div class="product_1  pl-3 mr-2" summ="501">
-        <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2">
-          <img src = "img/laptop-1483974_640.jpg"  alt = "" />
-       </a>
-       <p id="span">product_2</p>
+            </div>
 
-       <div class="description mb-3">
-         Lorem ipsum dolor sit amet. <b style="color: red">Тест проверки поиска</b> Aspernatur quaerat dolore animi 
-       </div>
-      
-      <div class="pop">
-       <span style="width: 100px; font-size: 30px">501$</span>
-       <p  class="btn btn-outline-primary basket ml-4 mt-3">Добавить</p>
-       </div>
-      </div>
+  <!-- правая часть болка -->
+            <div class=" col-lg-12 ">
 
-             <div class="product_1  pl-3 mr-2" summ="502">
-        <a href="img/mobile-phone-2198770_640.png" data-fancybox="gallery" data-caption="Caption #3">
-          <img src = "img/mobile-phone-2198770_640.png"  alt = "" />
-       </a>
-       <p id="span">product_3</p>
+              <div class="footer_rightBlock d-flex justify-content-center" >
+                <ul class="icon m-4 ">
+                  <a href="#"><i id="1" class="fa fa-vk p-2" aria-hidden="true"></i></a> 
+                  <a href="#"><i id="1" class="fa fa-twitter p-2" aria-hidden="true"></i></a> 
+                  <a href="#"><i id="1" class="fa fa-facebook-official p-2" aria-hidden="true"></i></a> 
+                  <a href="#"><i id="1" class="fa fa-github p-2" aria-hidden="true"></i></a>
+                </ul>
+              </div>
 
-       <div class="description mb-3">
-         Lorem ipsum dolor sit amet. <b style="color: red">Еще поиск</b> Aspernatur quaerat dolore animi
-       </div>
-      
-      <div class="pop">
-       <span style="width: 100px; font-size: 30px">502$</span>
-       <p  class="btn btn-outline-primary basket ml-4 mt-3">Добавить</p>
-       </div>
-      </div>
+            </div>
 
-             <div class="product_1  pl-3 mr-2" summ="503">
-        <a href="img/e-guitar-1736291_640.jpg" data-fancybox="gallery" data-caption="Caption #4">
-          <img src = "img/e-guitar-1736291_640.jpg"  alt = "" />
-       </a>
-       <p id="span">product_4</p>
-
-       <div class="description mb-3">
-         Lorem ipsum dolor sit amet.<b style="color: red">И еще один поиск</b> Aspernatur quaerat dolore animi
-       </div>
-      
-      <div class="pop">
-       <span style="width: 100px; font-size: 30px">503$</span>
-       <p  class="btn btn-outline-primary basket ml-4 mt-3">Добавить</p>
-       </div>
-      </div>
-
-             <div class="product_1  pl-3 mr-2" summ="504">
-        <a href="img/mp3-player-270977_640.jpg" data-fancybox="gallery" data-caption="Caption #5">
-          <img src = "img/mp3-player-270977_640.jpg"  alt = "" />
-       </a>
-       <p id="span">product_5</p>
-
-       <div class="description mb-3">
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quaerat dolore animi
-       </div>
-      
-      <div class="pop">
-       <span style="width: 100px; font-size: 30px">504$</span>
-       <p  class="btn btn-outline-primary basket ml-4 mt-3">Добавить</p>
-       </div>
-      </div>
-
-       <div class="product_1  pl-3 mr-2" summ="505">
-        <a href="img/tv-1844964_640.jpg" data-fancybox="gallery" data-caption="Caption #6">
-          <img src = "img/tv-1844964_640.jpg"  alt = "" />
-       </a>
-       <p id="span">product_6</p>
-
-       <div class="description mb-3">
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quaerat dolore animi
-       </div>
-      
-      <div class="pop">
-       <span style="width: 100px; font-size: 30px">505$</span>
-       <p  class="btn btn-outline-primary basket ml-4 mt-3">Добавить</p>
-       </div>
-      </div>
-
-       <div class="product_1  pl-3 mr-2" summ="506">
-        <a href="img/box-1296708_640.png" data-fancybox="gallery" data-caption="Caption #7">
-          <img src = "img/box-1296708_640.png"  alt = "" />
-       </a>
-       <p id="span">product_7</p>
-
-       <div class="description mb-3">
-         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quaerat dolore animi
-       </div>
-      
-      <div class="pop">
-       <span style="width: 100px; font-size: 30px">506$</span>
-       <p  class="btn btn-outline-primary basket ml-4 mt-3">Добавить</p>
-       </div>
-      </div>
-
-       <div class="product_1  pl-3 mr-2" summ="507">
-        <a href="img/typewriter-1248088_640.jpg" data-fancybox="gallery" data-caption="Caption #8">
-          <img src = "img/typewriter-1248088_640.jpg"  alt = "" />
-       </a>
-       <p id="span">product_8</p>
-
-       <div class="description mb-3">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur quaerat dolore animi
-       </div>
-      
-      <div class="pop">
-       <span style="width: 100px; font-size: 30px">507$</span>
-       <p  class="btn btn-outline-primary basket ml-4 mt-3">Добавить</p>
-       </div>
-      </div>
-
-    </div>
-
-
-    <footer class="foot">
-      <ul class="foot_ul">
-        <li><a href="#">О проекте</a></li>
-        <li><a href="#">Вакансии</a></li>
-        <li><a href="#">Реклама на сайте</a></li>
-        <li><a href="#">Конфеденциальность </a></li>
-      </ul>
-
-      <ul class="icon">
-        <a href="#"><i id="1" class="fa fa-vk" aria-hidden="true"></i></a> 
-        <a href="#"><i id="1" class="fa fa-twitter" aria-hidden="true"></i></a> 
-        <a href="#"><i id="1" class="fa fa-facebook-official" aria-hidden="true"></i></a> 
-        <a href="#"><i id="1" class="fa fa-github" aria-hidden="true"></i></a>
-      </ul>
-      
-
-      <p style="color: #fff">© 2002–2019 Иванов Иван, по всем вопросам пишите по адресу vlad@htmlbook.ru</p>
-      
-    </footer>
-           
-        
+          </div>
+        </div>
+         
+      </footer>
 
 
 
+
+
+
+<!-- видео -->
+<!--  <div class="homepage-hero-module">
+ <div class="video-container">
+  <div class="filter"></div>
+  <video autoplay loop muted playsinline src="video/USA-Flag.mp4" class="fillWidth"></video> -->
+  
+  <!-- ... -->
+
+<!-- /видео -->
+<!-- </div> -->
+<!-- </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <!--
+        display: grid; /*грид сетка 
+        grid-template-columns: 70% 30%;/*кол-во колонок и их ширина
+        grid-column-gap: 1em; Вертикал отступ
+        grid-row-gap: 1em;Горизон отступ
+        grid-gap: 1em; Вертик-Гориз отступ
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-columns:repeat(4,2fr); 4- колонки, 2fr-по 2 фракции
+        grid-auto-rows:150px; высота всех колонок
+        grid-auto-rows: minmax(100px, auto); минимальнои, максимальное(учитывает контент
+        justify-items: start/end/center; выравниваение по горизонтали
+        align-items: start/end/center; выравниванее по вертикали
+        grid-column: 1/3; 75% горизон экрана(экран разделен на 4 части) 
+        grid-row: 1/2; 50% экрана(вертикаль)
+        grid-column: 2/4; меняет местами (1243)-->
+
+
+
+<!--col-xs-12-смартифон col-sm-9-планшет col-md-4-ноут col-lg-6-монитор  -->
           <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
    <script src="https://code.jquery.com/jquery-3.4.0.js"integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="crossorigin="anonymous"></script>
