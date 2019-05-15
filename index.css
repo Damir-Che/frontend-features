@@ -37,6 +37,10 @@ width: 200px;
 margin: -35px 0 0 -35px; /*смещение иконки, чтобы она располагалась по центру*/
 }
 
+/*ползунок для хрома*/
+::-webkit-scrollbar{width: 5px}
+::-webkit-scrollbar-button {border-radius: 10px}
+::-webkit-scrollbar-thumb{background-color: #cccccc; border-radius: 5px}
 
 
 
@@ -86,6 +90,8 @@ margin: -35px 0 0 -35px; /*смещение иконки, чтобы она ра
 	
 }
 
+
+
 /*1 секция*/
 
 	/*секция 1.  меню*/
@@ -114,7 +120,9 @@ margin: -35px 0 0 -35px; /*смещение иконки, чтобы она ра
       }
       /*Адаптивные кнопки регистрации*/
       .btn_menu{
-      	display: none;
+		margin-top: 490px;
+		margin-right: 5px;
+
       }
 
 /*2 секция*/
@@ -128,10 +136,9 @@ margin: -35px 0 0 -35px; /*смещение иконки, чтобы она ра
 	}
 	/*блок с кнопками сорт. и строкой поиска*/
 	.product{
-        /*background-color: #666;*/
-        margin-top: 159px;
+        margin-top: 50px;
         border-radius: 2px;
-        /*position: absolute;*/
+
         /*opacity: 0.5*/
       }
     /*рамка товаров*/
@@ -168,7 +175,10 @@ margin: -35px 0 0 -35px; /*смещение иконки, чтобы она ра
 		overflow: auto;
 		text-align: center;
 		color: #000;
+
+
 	}
+
 	/*цена товара*/
 	.price_Product{
 		width: 100px; 
@@ -337,9 +347,6 @@ margin: -35px 0 0 -35px; /*смещение иконки, чтобы она ра
 
 }
 
-@media screen and (max-width: 1102px){
-
-}
 
 
 @media screen and (max-width: 968px){
@@ -373,10 +380,6 @@ margin: -35px 0 0 -35px; /*смещение иконки, чтобы она ра
 	.section_1{
 		left: -200px;
 	}
-	/*кнопки регистрации в навбар*/
-    .btn_navbar{
-    	visibility: hidden;
-    }
 	/*Адаптивные кнопки регистрации в меню*/
 	.btn_menu{
       	display: block;
@@ -433,9 +436,6 @@ margin: -35px 0 0 -35px; /*смещение иконки, чтобы она ра
 
 	}
 
-/*	.btnSign{
-		width: 400px;
-	}*/
 }
 
 
