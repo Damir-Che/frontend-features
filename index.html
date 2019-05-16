@@ -1,490 +1,318 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" media="screen" />
 
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>CSSgrid</title>
+  </head>
 
-    <style>
-
-    </style>
-
-  <!----------Модальные окна ----------------------------------------------------------- -->
-
-<!-- Кнопка ВХОД -->
-  <div class="modal btnSign fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg">
-    <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" style="margin-left:450px ">&times;</span>
-        </button>
+  <body>
+    <div class="modal btnSign fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="margin-left:450px ">&times;</span>
+          </button>
 
           <form>
-  <div class="form-group pl-2 pr-2">
-    <label for="exampleInputEmail1">Введите Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+            <div class="form-group pl-2 pr-2">
+              <label for="exampleInputEmail1">Введите Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+            </div>
 
-  </div>
-  <div class="form-group pl-2 pr-2">
-    <label for="exampleInputPassword1">Пароль</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
-  </div>
+            <div class="form-group pl-2 pr-2">
+              <label for="exampleInputPassword1">Пароль</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+            </div>
 
-    <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
-  </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+            </div>
 
-  <button type="submit" class="btn btn-primary pt-1" style="width: 100%">Вход</button>
-</form>
-  <p class="pl-3">Войти с помощью <br>
-      <a href=""><i class="fa fa-vk" aria-hidden="true"></i></a> 
-      <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a> 
-      <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a> 
-      <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
-  </p>
-    </div>
-  </div>
-</div>
+            <button type="submit" class="btn btn-primary pt-1" style="width: 100%">Вход</button>
+          </form>
 
-
-<!--Кнопка  РЕГИСТРАЦИЯ  -->
-
-  <div class="modal fade btnReg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true" style="margin-left:450px ">&times;</span>
-        </button>
-      <div class="modal-body">
-        <form>
-  <div class="row">
-    <div class="col">
-      <input type="text" class="form-control form_width" placeholder="Имя">
-    </div>
-    <div class="col">
-      <input type="text" class="form-control form_width" placeholder="Фамилия">
-    </div>
-  </div>
-   <div class="row pt-2">
-    <div class="col">
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-    </div>
-    <div class="col">
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
-      <small id="emailHelp" class="form-text text-muted">Не менее 6 символов</small>
-    </div>
-  </div>
-
-</form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
-        <button type="button" class="btn btn-primary">Регистрация</button>
+          <p class="pl-3">Войти с помощью <br>
+              <a href=""><i class="fa fa-vk" aria-hidden="true"></i></a> 
+              <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a> 
+              <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a> 
+              <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+          </p>
+       </div>
       </div>
     </div>
-  </div>
-</div>
 
-<!-- Кнопка ПРО НАС -->
-  <div class="modal fade btnInfo" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae incidunt eveniet odio est, voluptas perferendis sint doloremque neque nulla ab modi, officiis eos. Repudiandae fuga assumenda ab accusamus quia quidem aut iste, ipsum enim reiciendis, corrupti nesciunt voluptatibus. Eaque quaerat, exercitationem aut porro adipisci illum expedita obcaecati dolorum quidem repudiandae consequuntur hic harum fuga? Consectetur eligendi nesciunt nam nulla voluptatibus inventore quisquam sint enim, esse suscipit maxime cumque at necessitatibus totam alias perferendis sed, minima harum architecto consequatur repellat. Fuga consectetur corporis rem sapiente consequuntur, vel laborum dolor expedita consequatur illum neque, in, animi quasi tempore voluptatum explicabo. Sed.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+    <div class="modal fade btnReg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="margin-left:450px ">&times;</span>
+          </button>
+
+          <div class="modal-body">
+            <form>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control form_width" placeholder="Имя">
+                </div>
+                <div class="col">
+                  <input type="text" class="form-control form_width" placeholder="Фамилия">
+                </div>
+              </div>
+
+              <div class="row pt-2">
+                <div class="col">
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                </div>
+                <div class="col">
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Пароль">
+                  <small id="emailHelp" class="form-text text-muted">Не менее 6 символов</small>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Отмена</button>
+            <button type="button" class="btn btn-primary">Регистрация</button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
+    <div class="modal fade btnInfo" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae incidunt eveniet odio est, voluptas perferendis sint doloremque neque nulla ab modi, officiis eos. Repudiandae fuga assumenda ab accusamus quia quidem aut iste, ipsum enim reiciendis, corrupti nesciunt voluptatibus. Eaque quaerat, exercitationem aut porro adipisci illum expedita obcaecati dolorum quidem repudiandae consequuntur hic harum fuga? Consectetur eligendi nesciunt nam nulla voluptatibus inventore quisquam sint enim, esse suscipit maxime cumque at necessitatibus totam alias perferendis sed, minima harum architecto consequatur repellat. Fuga consectetur corporis rem sapiente consequuntur, vel laborum dolor expedita consequatur illum neque, in, animi quasi tempore voluptatum explicabo. Sed.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<!-- уведомление -->
     <div class="notification-container">
       <div class="content pt-4 pl-4" >
         Tets notify!<img src="img/591c7762d897897e8465186b_close.svg" class="x pl-5">
       </div>
     </div>
 
+    <div id="preloaders">
+      <img src="img/30.gif">
+    </div>
+        
+    <nav class="nav" style="">
+      <i class=" but fa fa-bars p-1 ml-1" aria-hidden="true" style="position: absolute; z-index: 1"></i>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-9  d-flex justify-content-end" style="" style="width: 250px;">
+              <i class="fa fa-shopping-cart p-1 " aria-hidden="true"><span class ='null pl-2'>0</span></i>
+          </div>
+       </div>
+    </nav>
 
-  <!-- ----------------------------------------------------------- -->
-<!-- индикатор загрузки -->
-      <div id="preloaders">
-        <img src="img/30.gif">
-      </div>
-
-<!-- header -->
-      
-      <nav class="nav" style="">
-        <i class=" but fa fa-bars p-1 ml-1" aria-hidden="true" style="position: absolute; z-index: 1"></i>
-        <div class="container-fluid">
-          <div class="row">
-<!-- корзина -->
-            <div class="col-md-9  d-flex justify-content-end" style="" style="width: 250px;">
-                <i class="fa fa-shopping-cart p-1 " aria-hidden="true"><span class ='null pl-2'>0</span></i>
-            </div>
-         </div>
-      </nav>
-<!-- меню -->
-      <section class="section_1 mt-3 pt-4 pl-3">
-        <ul class="mt-3">
-          <li><a href="#" class="the_main" >Главная</a></li>
-          <li><a href="#1" class="silka">Контакты</a></li>
-          <li><a href="#" class="pro_nas" data-toggle="modal" data-target="#exampleModal">Про нас</a></li>
-          <button class="Xbut btn btn-outline-info mt-2">Tets notify</button>
-        </ul>        
-<!-- Адаптивные кнопки регистрации -->
+    <section class="section_1 mt-3 pt-4 pl-3">
+      <ul class="mt-3">
+        <li><a href="#" class="the_main" >Главная</a></li>
+        <li><a href="#1" class="silka">Контакты</a></li>
+        <li><a href="#" class="pro_nas" data-toggle="modal" data-target="#exampleModal">Про нас</a></li>
+        <button class="Xbut btn btn-outline-info mt-2">Tets notify</button>
+      </ul>        
         <div class="btn_menu ">
           <button type="button" class="btn btn-primary btnSign" data-toggle="modal" data-target=".bd-example-modal-lg" style="width: 58px">Вход</button>
           <button type="button" class="btn btn-primary  pr-1" data-toggle="modal" data-target="#myModal" style="width: 111px">Регистрация</button>
         </div>
+    </section>
 
-      </section>
-
-
-<!------- товары -------------------------------------------------------------------------->
-      <div class="container cont" >
-        <div class="row d-flex justify-content-end">
-
-          <div class="product col-md-10">
-            <div class="row">
-<!-- Сортировка -->
-              <div class="col-md-6 col-sm-6 col-12" style="background-color: #444;">
-                <button class="btn btn-warning expensive m-1">Дороже</button>
-                <button class="btn btn-warning cheaper m-1">Дешевле</button>
-              </div>
-<!-- Строка поиска -->
-              <div class="col-md-6 col-sm-6 col-12 " style="background-color: #444">
-                <input type="text" class="form-control pull-right m-1" style="" id="search" placeholder="Поиск...">
-              </div>
-
+    <div class="container cont" >
+      <div class="row d-flex justify-content-end">
+        <div class="product col-md-10">
+          
+          <div class="row tools">
+            <div class="col-md-6 col-sm-6 col-12">
+              <button class="btn btn-warning expensive m-1">Дороже</button>
+              <button class="btn btn-warning cheaper m-1">Дешевле</button>
             </div>
-
-<!-- Секция с товарами -->
-            <div class="row">
-              <div class="col-md-12 mt-4 qqq">
-<!--Блок с товарами  -->
-
-<!------ 1 строка товара  ---------------------------------------------------------------------->
-                <div class="row">
-    <!-- Товар 1 -->
-                  <div class="col-md-3 product_block mb-3" summ="501">
-        <!-- img товара -->
-                    <div class="item">
-
-                      <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" class="p-2" id="img"  alt = "Картинка 1" /></a>
-          <!-- название товара -->
-                        <span class="span_Title">product_1</span>
-          <!-- описание товара -->
-                        <div>
-                          <p class="p_Description" >
-                           Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi <span style="color: #FE9A2E"><b>ОДИН</b></span>
-                        </p>
-                      </div>
-          <!-- цена товара -->
-                      <span style="" class="price_Product">501$</span>
-          <!-- кнопка добавить -->
-                      <button  class="btn btn-outline-primary basket mt-2  mb-2 ">Добавить</button>
-
-                    </div>
-
-                  </div>
-
-    <!-- Товар 2 -->
-                   <div class="col-md-3 product_block  mb-3"  summ="502">
-
-                    <div class="item">
-          <!-- img товара -->
-                      <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
-          <!-- название товара -->
-                        <span class="span_Title">product_2</span>
-          <!-- описание товара -->
-                        <div>
-                          <p class="p_Description" >
-                           Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ДВА</b></span>
-                        </p>
-                      </div>
-          <!-- цена товара -->
-                      <span style="" class="price_Product">502$</span>
-          <!-- кнопка добавить -->
-                      <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
-
-                    </div>
-
-                  </div>
-
-    <!-- Товар 3 -->
-                  <div class="col-md-3 product_block mb-3" summ="503">
-
-                    <div class="item">
-        <!-- img товара -->
-                      <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
-          <!-- название товара -->
-                        <span class="span_Title">product_3</span>
-          <!-- описание товара -->
-                        <div>
-                          <p class="p_Description" >
-                           Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ДЕСЯТЬ</b></span>
-                        </p>
-                      </div>
-          <!-- цена товара -->
-                      <span style="" class="price_Product">503$</span>
-          <!-- кнопка добавить -->
-                      <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
-
-                    </div>
-
-                  </div>
-
-    <!-- Товар 4 -->
-                  <div class="col-md-3 product_block mb-3" summ="504">
-
-                    <div class="item">
-          <!-- img товара -->
-                      <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
-          <!-- название товара -->
-                        <span class="span_Title">product_4</span>
-          <!-- описание товара -->
-                        <div>
-                          <p class="p_Description" >
-                           Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ТРИ</b></span>
-                        </p>
-                      </div>
-          <!-- цена товара -->
-                      <span style="" class="price_Product">504$</span>
-          <!-- кнопка добавить -->
-                      <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
-
-                    </div>
-                  </div>
-      <!-- /row -->
-               </div>
-
-<!------ 2 строка товара  ---------------------------------------------------------------------->
-
-                <div class="row  mt-3 mb-3">
-    <!-- Товар 1 -->
-                  <div class="col-md-3 product_block mb-3" summ="505">
-
-                    <div class="item">
-          <!-- img товара -->
-                      <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
-          <!-- название товара -->
-                        <span class="span_Title">product_5</span>
-          <!-- описание товара -->
-                        <div>
-                          <p class="p_Description" >
-                           Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ЧЕТЫРИ</b></span>
-                        </p>
-                      </div>
-          <!-- цена товара -->
-                      <span style="" class="price_Product">505$</span>
-          <!-- кнопка добавить -->
-                      <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
-
-                    </div>
-
-                  </div>
-
-    <!-- Товар 2 -->
-                   <div class="col-md-3 product_block mb-3" summ="506">
-
-                    <div class="item">
-          <!-- img товара -->
-                      <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
-          <!-- название товара -->
-                        <span class="span_Title">product_6</span>
-          <!-- описание товара -->
-                        <div>
-                          <p class="p_Description" >
-                           Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ПЯТЬ</b></span>
-                        </p>
-                      </div>
-          <!-- цена товара -->
-                      <span style="" class="price_Product">506$</span>
-          <!-- кнопка добавить -->
-                      <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
-
-                    </div>
-
-                  </div>
-
-    <!-- Товар 3 -->
-                  <div class="col-md-3 product_block mb-3" summ="507">
-
-                    <div class="item">
-          <!-- img товара -->
-                      <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
-          <!-- название товара -->
-                        <span class="span_Title">product_7</span>
-          <!-- описание товара -->
-                        <div>
-                          <p class="p_Description" >
-                           Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ШЕСТЬ</b></span>
-                        </p>
-                      </div>
-          <!-- цена товара -->
-                      <span style="" class="price_Product">507$</span>
-          <!-- кнопка добавить -->
-                      <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
-
-                    </div>
-
-                  </div>
-                  
-    <!-- Товар 4 -->
-                  <div class="col-md-3 product_block mb-3" summ="508">
-
-                    <div class="item">
-          <!-- img товара -->
-                      <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
-          <!-- название товара -->
-                        <span class="span_Title">product_8</span>
-          <!-- описание товара -->
-                        <div>
-                          <p class="p_Description" >
-                           Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>СЕМЬ</b></span>
-                        </p>
-                      </div>
-          <!-- цена товара -->
-                      <span style="" class="price_Product">508$</span>
-          <!-- кнопка добавить -->
-                      <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
-                    </div>
-                  </div>
-
-               </div>
-              </div>
-        <!-- /row -->
+            <div class="col-md-6 col-sm-6 col-12>
+              <input type="text" class="form-control pull-right m-1" style="" id="search" placeholder="Поиск...">
             </div>
-      <!-- /product  -->
           </div>
 
-    <!-- /row с товарами  -->
-        </div>
-<!-- /container с товарами -->      
-      </div>
-
-<!---------------------------------footer--------------------------------------------------->
-
-      <footer class="mt-1">
-        <div class="container-fluid">
           <div class="row">
-  <!-- левая часть болка -->
-            <div class=" col-lg-12" >
+            <div class="col-md-12 mt-4 qqq">
+              
+              <div class="row">
 
-              <div class="footfooter_leftBlock d-flex justify-content-center" >
-                <ul class="list-inline footer_Information m-4">
-                  <li class="list-inline-item p-2"><a href="#">О проекте</a></li>
-                  <li class="list-inline-item p-2"><a href="#">Вакансии</a></li>
-                  <li class="list-inline-item p-2"><a href="#">Реклама на сайте</a></li>
-                  <li class="list-inline-item p-2"><a href="#">Конфеденциальность </a></li>
-                </ul>
+                <div class="col-md-3 product_block mb-3" summ="501">
+                  <div class="item">
+                    <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" class="p-2" id="img"  alt = "Картинка 1" /></a>
+                    <span class="span_Title">product_1</span>
+                    <div>
+                      <p class="p_Description" >
+                        Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi <span style="color: #FE9A2E"><b>ОДИН</b></span>
+                      </p>
+                    </div>
+                    <span style="" class="price_Product">501$</span>
+                    <button  class="btn btn-outline-primary basket mt-2  mb-2 ">Добавить</button>
+                  </div>
+                </div>
+
+                <div class="col-md-3 product_block  mb-3"  summ="502">
+                  <div class="item">
+                    <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
+                    <span class="span_Title">product_2</span>
+                    <div>
+                      <p class="p_Description" >
+                        Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ДВА</b></span>
+                    </p>
+                    </div>
+                    <span style="" class="price_Product">502$</span>
+                    <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
+                  </div>
+                </div>
+
+                <div class="col-md-3 product_block mb-3" summ="503">
+                  <div class="item">
+                    <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
+                    <span class="span_Title">product_3</span>
+                    <div>
+                      <p class="p_Description" >
+                        Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ДЕСЯТЬ</b></span>
+                      </p>
+                    </div>
+                    <span style="" class="price_Product">503$</span>
+                    <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
+                  </div>
+                </div>
+
+                <div class="col-md-3 product_block mb-3" summ="504">
+                  <div class="item">
+                    <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
+                    <span class="span_Title">product_4</span>
+                    <div>
+                      <p class="p_Description" >
+                        Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ТРИ</b></span>
+                      </p>
+                    </div>
+                    <span style="" class="price_Product">504$</span>
+                    <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
+                  </div>
+                </div>  
               </div>
 
+              <div class="row  mt-3 mb-3">
+                <div class="col-md-3 product_block mb-3" summ="505">
+                  <div class="item">
+                    <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
+                    <span class="span_Title">product_5</span>
+                    <div>
+                      <p class="p_Description" >
+                        Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ЧЕТЫРИ</b></span>
+                      </p>
+                    </div>
+                    <span style="" class="price_Product">505$</span>
+                    <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
+                  </div>
+                </div>
+
+                <div class="col-md-3 product_block mb-3" summ="506">
+                  <div class="item">
+                    <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
+                    <span class="span_Title">product_6</span>
+                    <div>
+                      <p class="p_Description" >
+                        Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ПЯТЬ</b></span>
+                      </p>
+                    </div>
+                    <span style="" class="price_Product">506$</span>
+                    <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
+                  </div>
+                </div>
+
+                <div class="col-md-3 product_block mb-3" summ="507">
+                  <div class="item">
+                    <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
+                    <span class="span_Title">product_7</span>
+                    <div>
+                      <p class="p_Description" >
+                        Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>ШЕСТЬ</b></span>
+                      </p>
+                    </div>
+                    <span style="" class="price_Product">507$</span>
+                    <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
+                  </div>
+                </div>
+                  
+                <div class="col-md-3 product_block mb-3" summ="508">
+                  <div class="item">
+                    <a href="img/laptop-1483974_640.jpg" data-fancybox="gallery" data-caption="Caption #2"><img src = "img/laptop-1483974_640.jpg" id="img" class="p-2"  alt = "Картинка 1" /></a>
+                    <span class="span_Title">product_8</span>
+                    <div>
+                      <p class="p_Description" >
+                        Lorem ipsum dolor sit amet. <b style="color: #FE9A2E">Тест проверки поиска</b> Aspernatur quaerat dolore animi<span style="color: #FE9A2E"><b>СЕМЬ</b></span>
+                      </p>
+                    </div>
+                    <span style="" class="price_Product">508$</span>
+                    <button  class="btn btn-outline-primary basket mt-2 mb-2">Добавить</button>
+                  </div>
+                </div>
+
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-  <!-- правая часть болка -->
-            <div class=" col-lg-12 ">
+    <footer class="mt-1">
+      <div class="container-fluid">
+        <div class="row">
+          <div class=" col-lg-12" >
+            <div class="footfooter_leftBlock d-flex justify-content-center" >
+              <ul class="list-inline footer_Information m-4">
+                <li class="list-inline-item p-2"><a href="#">О проекте</a></li>
+                <li class="list-inline-item p-2"><a href="#">Вакансии</a></li>
+                <li class="list-inline-item p-2"><a href="#">Реклама на сайте</a></li>
+                <li class="list-inline-item p-2"><a href="#">Конфеденциальность </a></li>
+              </ul>
+            </div>
+          </div>
 
-              <div class="footer_rightBlock d-flex justify-content-center" >
+          <div class=" col-lg-12 ">
+            <div class="footer_rightBlock d-flex justify-content-center" >
                 <ul class="icon m-4 ">
                   <a href="#"><i id="1" class="fa fa-vk p-2" aria-hidden="true"></i></a> 
                   <a href="#"><i id="1" class="fa fa-twitter p-2" aria-hidden="true"></i></a> 
                   <a href="#"><i id="1" class="fa fa-facebook-official p-2" aria-hidden="true"></i></a> 
                   <a href="#"><i id="1" class="fa fa-github p-2" aria-hidden="true"></i></a>
                 </ul>
-              </div>
-
             </div>
-
           </div>
         </div>
-         
-      </footer>
+      </div>      
+    </footer>
 
 
-
-
-
-
-<!-- видео -->
-<!--  <div class="homepage-hero-module">
- <div class="video-container">
-  <div class="filter"></div>
-  <video autoplay loop muted playsinline src="video/USA-Flag.mp4" class="fillWidth"></video> -->
-  
-  <!-- ... -->
-
-<!-- /видео -->
-<!-- </div> -->
-<!-- </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-       <!--
-        display: grid; /*грид сетка 
-        grid-template-columns: 70% 30%;/*кол-во колонок и их ширина
-        grid-column-gap: 1em; Вертикал отступ
-        grid-row-gap: 1em;Горизон отступ
-        grid-gap: 1em; Вертик-Гориз отступ
-        grid-template-columns: 1fr 2fr 1fr;
-        grid-template-columns:repeat(4,2fr); 4- колонки, 2fr-по 2 фракции
-        grid-auto-rows:150px; высота всех колонок
-        grid-auto-rows: minmax(100px, auto); минимальнои, максимальное(учитывает контент
-        justify-items: start/end/center; выравниваение по горизонтали
-        align-items: start/end/center; выравниванее по вертикали
-        grid-column: 1/3; 75% горизон экрана(экран разделен на 4 части) 
-        grid-row: 1/2; 50% экрана(вертикаль)
-        grid-column: 2/4; меняет местами (1243)-->
-
-
-
-<!--col-xs-12-смартифон col-sm-9-планшет col-md-4-ноут col-lg-6-монитор  -->
-          <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-   <script src="https://code.jquery.com/jquery-3.4.0.js"integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="crossorigin="anonymous"></script>
-    <!--fancybox  -->
+    <script src="https://code.jquery.com/jquery-3.4.0.js"integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
     <script type="text/javascript" src="index.js"></script>
-
   </body>
 </html>

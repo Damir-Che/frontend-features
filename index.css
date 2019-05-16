@@ -1,6 +1,10 @@
 body{
-	/*background: url(img/background-3246124_1920.jpg) center ;*/
-	background-color: #e6e6e6;
+  background-color: #e6e6e6;
+}
+
+
+.tools {
+  border-bottom: 1px dashed #bcbcbc
 }
 
 /*классы для jq*/
@@ -45,43 +49,44 @@ margin: -35px 0 0 -35px; /*смещение иконки, чтобы она ра
 
 
 /*навбар*/
-      .nav{
-        background-color: #333;
- 		position: fixed;
- 		width: 100%; 
-  		z-index: 101;
-
-      }
+.nav{
+  background-color: #333;
+	position: fixed;
+	width: 100%; 
+	z-index: 101;
+}
 	/*адаптивная кнопка*/
-      .fa-bars{
-        font-size: 35px;
-        color: #fff;
-        height: 39px;
-        width: 41px;
-        transition: all 300ms;
-        display: none;
-        position: fixed;
-      }
-      .fa-bars:hover{
-        cursor: pointer;
-        background-color: #777;
-        color: #000;
-        border-radius: 3px;
-        transition: all 300ms;
-      }
+.fa-bars{
+  font-size: 35px;
+  color: #fff;
+  height: 39px;
+  width: 41px;
+  transition: all 300ms;
+  display: none;
+  position: fixed;
+}
+
+.fa-bars:hover{
+  cursor: pointer;
+  background-color: #777;
+  color: #000;
+  border-radius: 3px;
+  transition: all 300ms;
+}
 	/*корзина*/
-      .fa-shopping-cart{
-        font-size: 35px;
-        color: #fff;
-        transition: all 300ms;
-        width: 55px;
-      }
-      .fa-shopping-cart:hover{
-        cursor: pointer;
-        background-color: #444;
-        border-radius: 3px;
-        transition: all 300ms;
-      }
+.fa-shopping-cart{
+  font-size: 35px;
+  color: #fff;
+  transition: all 300ms;
+  width: 55px;
+}
+
+.fa-shopping-cart:hover{
+  cursor: pointer;
+  background-color: #444;
+  border-radius: 3px;
+  transition: all 300ms;
+}
       /*счетчик*/
 .null{
 	font-size: 30px;
@@ -90,119 +95,113 @@ margin: -35px 0 0 -35px; /*смещение иконки, чтобы она ра
 	
 }
 
-
-
 /*1 секция*/
 
 	/*секция 1.  меню*/
-      .section_1{
-        background-color: #57626f;
-        height: 1000px;
-        position: fixed;
-        z-index: 1;
-        width: 200px;
-        border-right: 2px solid #F7D358;
-        transition: all 300ms;
-
-      }
+.section_1{
+  background-color: #57626f;
+  height: 1000px;
+  position: fixed;
+  z-index: 1;
+  width: 200px;
+  border-right: 2px solid #F7D358;
+  transition: all 300ms;
+}
 	/*секция 1. Список*/
-      .section_1 ul li{
-        list-style: none;
-        padding-top: 30px;
-      }
+.section_1 ul li{
+  list-style: none;
+  padding-top: 30px;
+}
 	/*секция 1. Ссылки*/
-      .section_1 a{
-        text-decoration: none;
-        color: #fff;
-      }
-      .section_1 a:hover{
-        color: #59e9df;
-      }
+.section_1 a{
+  text-decoration: none;
+  color: #fff;
+}
+.section_1 a:hover{
+  color: #59e9df;
+}
       /*Адаптивные кнопки регистрации*/
-      .btn_menu{
-		margin-top: 490px;
-		margin-right: 5px;
-
-      }
+.btn_menu{
+	margin-top: 490px;
+	margin-right: 5px;
+}
 
 /*2 секция*/
 	
 	/*Строка поиска*/
-	.form-control{
-		width: 100%;
-		margin-top: 5px;
-		margin-bottom: 5px;
-		width: 30%;
-	}
+.form-control{
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 30%;
+}
 	/*блок с кнопками сорт. и строкой поиска*/
-	.product{
-        margin-top: 50px;
-        border-radius: 2px;
+.product{
+  margin-top: 50px;
+  border-radius: 2px;
 
-        /*opacity: 0.5*/
-      }
-    /*рамка товаров*/
-    .item{
-    	border: 2px solid #fff;
-    	background-color: #fff;
-    	border-radius: 10px;
+  /*opacity: 0.5*/
+}
+/*рамка товаров*/
+.item{
+	border: 2px solid #fff;
+	background-color: #fff;
+	border-radius: 10px;
 
-    }
+}
 
 
 /*блок с товарами*/
 
 	/*картинки товаров*/
-	#img{
-	  width: 100%;
-	}
+#img{
+  width: 100%;
+}
 	/*название товара*/
-	.span_Title{
-		font-weight: bold;
-		font-size: 130%;
-		background: linear-gradient(45deg, #ffc107 40%, #FF8000 33%, #DF01D7);
-  		-webkit-background-clip: text;
-  		-webkit-text-fill-color: transparent;
-  		overflow: inherit; 
-  		margin-left: 25%
-	}
+.span_Title{
+	font-weight: bold;
+	font-size: 130%;
+	background: linear-gradient(45deg, #ffc107 40%, #FF8000 33%, #DF01D7);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		overflow: inherit; 
+		margin-left: 25%
+}
 	/*описание товара*/
-	.p_Description{
-		font-size: 13px;
-		padding: 5px;
-		width: 100%;
-		height: 72px;
-		overflow: auto;
-		text-align: center;
-		color: #000;
-
-
-	}
+.p_Description{
+	font-size: 13px;
+	padding: 5px;
+	width: 100%;
+	height: 72px;
+	overflow: auto;
+	text-align: center;
+	color: #000;
+}
 
 	/*цена товара*/
-	.price_Product{
-		width: 100px; 
-		font-size: 200%;
-		color:#000;
-		padding-left: 33%;
+.price_Product{
+	width: 100px; 
+	font-size: 200%;
+	color:#000;
+	padding-left: 33%;
 
-	}
+}
 	/*кнопка добавить*/
-	.basket{
-		width: 80%;
-		height: 33px;
-		margin-left: 10%;
-		border-radius: 30px;
-	}
+.basket{
+	width: 80%;
+	height: 33px;
+	margin-left: 10%;
+	border-radius: 30px;
+}
 
 /*footer*/
-	footer{
-		background-color: black;
-		border-top: 2px solid #F7D358;
-		height: 200px;
-		position: absolute;
-		width: 100%;
-		top: 1000px;
+footer{
+	background-color: black;
+	border-top: 2px solid #F7D358;
+	height: 200px;
+	position: absolute;
+	width: 100%;
+	top: 1000px;
 
 	}
 	/*левая часть*/
