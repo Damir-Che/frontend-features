@@ -119,7 +119,7 @@ margin: -35px 0 0 -35px;
 }
 
 .btn_menu {
-	margin-top: 215%;
+	margin-top: 380px;
 	margin-right: 60px;
 	position: relative ;
 
@@ -289,6 +289,9 @@ footer {
 .notification-container img:hover {
 	cursor: pointer;
 }
+.btn_close_reg{
+	display: none;
+}
 
 @media screen and (max-width: 1110px) {
 	.footer_leftBlock {
@@ -400,5 +403,31 @@ footer {
 @media screen and (max-width: 576px) {
 	.pull-right{
 		width: 98%;
+	}
+	.btnInfo{
+		width: 300px;
+		height: 200px;
+	}
+	.notification-container{
+		left: 0;
+		z-index: 101;
+	}
+	.section_1{
+		height: 729px;
+	}
+	.btnSign_form-check{
+		display: none;
+	}
+	.btnSign_form{
+		display: none;
+	}
+	.btnSign{
+		width: 350px;
+	}
+	.btn_close_reg{
+		display: block;
+	}
+	.btn_w_100{
+		width: 100%;
 	}
 }
