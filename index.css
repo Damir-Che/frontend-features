@@ -1,5 +1,8 @@
 body {
-  background-color: #e6e6e6;
+  /*background-color: #e6e6e6;*/
+  background: url(img/background-3246124_1920.jpg);
+  height: 100%;
+
 }
 
 
@@ -50,19 +53,20 @@ margin: -35px 0 0 -35px;
 }
 
 .fa-bars {
-  font-size: 35px;
-  color: #fff;
-  height: 39px;
-  width: 41px;
+  font-size: 40px;
+  color: #000;
+  height: 45px;
+  width: 45px;
   transition: all 300ms;
   display: none;
-  position: fixed;
+  position: absolute;
+  z-index: 1;
 }
 
 .fa-bars:hover {
   cursor: pointer;
   background-color: #777;
-  color: #000;
+  color: #fff;
   border-radius: 3px;
   transition: all 300ms;
 }
@@ -90,12 +94,14 @@ margin: -35px 0 0 -35px;
 
 .section_1 {
   background-color: #57626f;
-  height: 1000px;
+  opacity: 0.9;
+  height: 100%;
   position: fixed;
   z-index: 1;
-  width: 200px;
+  width: 230px;
   border-right: 2px solid #F7D358;
   transition: all 300ms;
+
 }
 
 .section_1 ul li {
@@ -113,8 +119,10 @@ margin: -35px 0 0 -35px;
 }
 
 .btn_menu {
-	margin-top: 490px;
-	margin-right: 5px;
+	margin-top: 215%;
+	margin-right: 60px;
+	position: relative ;
+
 }
 
 .form-control {
@@ -153,7 +161,7 @@ margin: -35px 0 0 -35px;
 	font-size: 13px;
 	padding: 5px;
 	width: 100%;
-	height: 72px;
+	height: 85px;
 	overflow: auto;
 	text-align: center;
 	color: #000;
@@ -328,12 +336,13 @@ footer {
 	}
 
 	.section_1{
-		left: -200px;
+		left: -300px;
 	}
 
 	.btn_menu{
     display: block;
   }
+
 }  
 
 @media screen and (max-width: 766px) {
@@ -358,10 +367,25 @@ footer {
 
 	.btnReg{
 		margin-left: 0;
+		width: 400px;
+		height: 280px;
+	}
+	.btnSignStyle{
+		left:0;
+		width: 420px;
+		height: 400px;		
+	}
+	.fa_left{
+		padding-left: 0;
 	}
 
 	.btnSign{
 		margin-left: 0;
+	}
+	.modal_style{
+		margin-left:0;
+		width: 300px;
+		height: 200px;			
 	}
 
 	.btnInfo{
