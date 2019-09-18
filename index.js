@@ -37,7 +37,7 @@ $(document).ready(function(){
 // ----------------------------------------------------------
 	// добовление товаров
 
-	$('.basket').on('click', function(){
+	$('.basket1').on('click', function(){
 		
 		$('.null').html(+$('.null').html()+1 );
 		$('.null').css('display','inline');
@@ -102,6 +102,45 @@ $(document).ready(function(){
 	// Загрузка странцы 
 	$('#preloaders').find('img').fadeOut().end().delay(400).fadeOut('slow');
 // -------------------------------------------------------------
+
+	// Выбор цвета 
+
+	
+	
+
+	// по клику на цвет
+	$('.colorItem').on('click', function(){
+
+		// запис в переменную картинку
+		let $mobImg = $(this).closest('.item').find('img');
+		
+		// записываем его отрибут в переменную
+		let imgPath = $(this).attr('data-img-path');
+
+		// анимация с исчезновением
+		$mobImg.fadeOut(200, function(){
+
+			// меняем путь картинки на отрибут и показываем
+			$mobImg.attr('src', imgPath).fadeIn(200);
+
+		})
+
+	});
+// -------------------------------------------------------------
+
+	
+	
+
+	// $('.item').on('mouseover',function(){
+	// 	// let $mobImg = $(this);
+	// });
+
+	
+
+
+
+
+
 
 })
 
